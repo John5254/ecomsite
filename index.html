@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <style>
+      body{
+        
+        
+      }
+
+      .Login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(54, 54, 148);
+        width: 400px;
+        height: 380px;
+        margin-top: 15px;
+        padding: 10px;
+      }
+      .login-text {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        border: 0px;
+        border-radius: 5px;
+        padding: 10px;
+        color: rgb(22, 22, 146);
+      }
+      .title {
+        font-size: 25px;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: rgb(22, 22, 146);
+        background-color: white;
+        padding: 5px;
+       
+      }
+      .password, .username {
+        font-size: 18px;
+        border: 0px;
+        padding: 5px;
+      }
+      .response {
+        font-size: 18px;
+        font-weight: bold;
+        background-color: white;
+        color: rgb(22, 22, 146);
+        padding: 10px;
+      }
+      .link-button {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        border: 0px;
+        border-radius: 5px;
+        padding: 5px;
+        color: rgb(22, 22, 146);
+      }
+    
+    </style>
+    </head>
+    <body>  
+      <div class="Login" >
+        <div class="title">
+          Login Here
+        </div>
+        <div>
+          <input type="text" placeholder="Enter your Username" class="username" required>
+        </div>
+        <div>
+          <input type="password" placeholder="Enter your Password"   class="password js-enter-button" id="password" >
+          <input type="checkbox" id="check-box" onclick="
+          showpassword();
+          ">
+        </div>
+        <div>
+          <button class="login-text js-login-button" >LOGIN</button>
+        </div>
+        <div class="feedback" > 
+        </div> 
+      </div>
+
+      <script>
+        function showpassword() {
+          const password = document.getElementById('password')
+          const checkBox = document.getElementById('check-box')
+          if ( password.type == 'password'){
+            password.type = 'text'
+          } else{
+            password.type = 'password'
+          }
+        }
+
+        function loginButton(){
+          let username = document.querySelector('.username').value ;
+          let password = document.querySelector('.password').value ;
+    
+         if (username === 'john5254' & password === 'olajesu') { document.querySelector('.feedback').innerHTML = `<div class = 'response'>ACCESS GRANTED! follow the link <a href='EcomSite.html' ><button class='link-button'>HERE </button></a></div>`;
+          }
+         else  { document.querySelector('.feedback').innerHTML = `<div class = 'response'>ACCESS DENIED! wrong username or password. </div>`}
+         }
+
+         const button = document.querySelector('.js-login-button');
+         
+         button.addEventListener('click', () =>{
+          loginButton();
+         } )
+         const enterButton = document.querySelector('.js-enter-button');
+         enterButton.addEventListener('keydown', (event) =>{
+          if (event.key === 'Enter') {
+            loginButton();
+          }
+          } )
+
+
+
+
+
+      </script>
+    </body>
+</html>

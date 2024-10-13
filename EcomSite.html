@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My E-commerce Website</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+      <header>
+      <div class="header">
+        <div class="brand-name">J-BELOVED STORE</div>
+        <div><input type="text" placeholder="Search" class="search-input">
+        <button>Search</button>
+        </div>
+        <div>
+          <button> CONTACT US </button>
+        </div>
+        <div>
+        <button> ABOUT US</button>
+        </div>
+      </div>
+      <div class="side-bar">
+        <div>
+        <button style="margin-bottom: 10px; flex: 1;"><img class="img-home-icon" src="icons/home.png" alt="Home icon"> Home</button>
+        </div>
+        <div>
+        <button style="margin-bottom: 10px;"><img class="img-product-icon" src="icons/product.png" alt="Product icon"> Products</button>
+        </div>
+        <div>
+          <a href="Cart categories.html" target="_blank"><button style="margin-bottom: 10px; position: relative;"><img class="img-cart-icon " src="icons/cart.png" alt="Cart icon"> My Cart   <div class="cart-quantity js-cart-quantity"></div>
+          </button>
+          </a>         
+        </div>
+        <div>
+          <button style="margin-bottom: 10px;"><img class="img-service-icon" src="icons/service.png" alt="Service icon"> Our Service</button>
+          </div>
+          <div>
+            <button style="margin-bottom: 10px;"><img class="img-partner-icon" src="icons/partner.png" alt="Partner icon"> Partners</button>
+          </div>
+          <div>
+            <button style="margin-bottom: 10px;"><img class="img-branches-icon" src="icons/branches.png" alt="Branches icon"> Branches</button>
+          </div>
+        
+      </div>
+      </header>
+
+      <main>
+      <div class="featured-products "> 
+      <h2>Featured Products</h2>
+    </div>
+      <div ><button class="clear-button js-clear-button">Clear Cart</button></div>
+
+      <h3 class="js-today-date"></h3>
+    
+      <div class="product-container js-product-container">
+      </div>
+      </section>
+      </main>
+
+      <footer>
+      <p class="footer">&copy; 2023 My E-commerce Store</p>
+      </footer>
+      <div class="cart-list"></div>
+
+    
+
+
+
+
+      <script src="
+      https://cdn.jsdelivr.net/npm/dayjs@1.11.13/dayjs.min.js
+      "></script>
+      <script  src="myJS/ecom.js" type="module">      
+      </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.cart-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.category {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+  text-align: left;
+  
+}
+.cart-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 20px;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  color: blue;
+}
+.clear-button{
+  height: 30px;
+  font-size: medium;
+  font-weight: bold;
+  width: 120px;
+  cursor: pointer;
+  color: blue;
+  border: none;
+}
+.image-class {
+  width: 100px;
+}
+.total-cost {
+  background-color: aqua;
+  padding: 10pxl;
+}
